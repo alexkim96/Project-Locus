@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "Locus3",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognitoa3ef7442",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

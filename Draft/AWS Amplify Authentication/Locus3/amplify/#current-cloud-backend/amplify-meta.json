@@ -1,0 +1,52 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "locus3-20190329144906-authRole",
+			"UnauthRoleArn": "arn:aws:iam::515337481886:role/locus3-20190329144906-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::515337481886:role/locus3-20190329144906-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "locus3-20190329144906-deployment",
+			"UnauthRoleName": "locus3-20190329144906-unauthRole",
+			"StackName": "locus3-20190329144906",
+			"StackId": "arn:aws:cloudformation:us-east-1:515337481886:stack/locus3-20190329144906/54587fc0-5253-11e9-b34b-1262c1c6cf8e"
+		}
+	},
+	"auth": {
+		"cognitoa3ef7442": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/locus3-20190329144906-deployment/amplify-cfn-templates/auth/cognitoa3ef7442-cloudformation-template.yml",
+				"logicalId": "authcognitoa3ef7442"
+			},
+			"lastPushTimeStamp": "2019-03-29T19:00:43.033Z",
+			"output": {
+				"AppClientSecret": "k7utcqiok9pqti6kqe9grfvki2q4nt7ivdu6kjsrh5l332f3arb",
+				"UserPoolId": "us-east-1_YOX8C9E5w",
+				"AppClientIDWeb": "34dqg450g3ob8ei6u64iv1ojbi",
+				"AppClientID": "2g18j1f1cgelgrheqnd430lf4d",
+				"IdentityPoolId": "us-east-1:82a16ffa-9a28-497b-9f51-1e3cb282fd7a",
+				"IdentityPoolName": "cognitoa3ef7442_identitypool_a3ef7442__dev",
+				"UserPoolName": "cognitoa3ef7442_userpool_a3ef7442"
+			},
+			"lastPushDirHash": "tLWz6Z7oJ1SMuYUZ+bALu9w9QBI="
+		}
+	},
+	"api": {
+		"Locus3": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS",
+				"GraphQLAPIIdOutput": "zwohiltijfg23ahjkq4biydwei",
+				"GraphQLAPIEndpointOutput": "https://wwrblyyvvrd6df7nrfc4jzp6ey.appsync-api.us-east-1.amazonaws.com/graphql"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/locus3-20190329144906-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiLocus3"
+			},
+			"lastPushTimeStamp": "2019-03-29T19:00:43.033Z",
+			"lastPushDirHash": "+fJAvT87df2JNS3QT2r8NuFDEPg="
+		}
+	}
+}
